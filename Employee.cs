@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+
+namespace Classes
+{
+    public class Employee
+    {
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+
+        public string FullName
+        {
+            get
+            {
+                return $"{FirstName} {LastName}";
+            }
+        }
+        public string Title { get; set; }
+        public DateTime Date { get; set; }
+    }
+}
